@@ -1,0 +1,43 @@
+/* Header
+---------------------------------------------------------------------*/
+#header {
+	padding-top:10px;
+	margin-left:100px;
+	padding-left:116px;
+	//background:#ECF0F1;
+	//border-bottom:5px solid #BDC3C7;
+	//border-right:5px solid #BDC3C7;
+	height:80px;
+
+	#new {
+		background:#34495E;
+		color:#ECF0F1;
+		display:inline-block;
+		margin-top:20px;
+		padding:10px 30px 10px 30px;
+		@include openSans(light);
+		@include font-size(2.0);
+		text-transform:uppercase;
+		border:none;
+		text-decoration:none;
+		border-radius:5px;
+		text-align:center;
+		border-bottom:3px solid #2C3E50;
+		transition: background-color 0.3s ease;
+		position:relative;
+		top:0;
+
+		&:hover {
+			background:#3498DB;
+			border-bottom:5px solid #2980B9;
+			top:-3px;
+		}
+
+		&:active {
+			border:none;
+			top:2px;
+		}
+	}
+}
+
+/*-------------------------------------------------------------------*/

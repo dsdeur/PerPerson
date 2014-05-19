@@ -1,0 +1,38 @@
+#userconfigContainer {
+	margin:0 auto;
+	max-width:835px;
+}
+
+section#userconfig, section#newKey {
+	width:auto;
+	margin:50px;
+	margin-top:0;
+
+	h1 {
+		display:block;
+		border-bottom:1px solid #6f6f6f;
+	}
+
+}
+.apikey {
+	height:50px;
+	border-bottom:1px solid #6f6f6f;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	width:100%;
+	clear:both;
+	
+	.text {
+		float:left;
+	}
+	button {
+		margin:0;
+		float:right;
+		margin-top:0;
+		margin-bottom:2px;
+
+			&:hover {
+				margin:0;
+			}
+	}
+}

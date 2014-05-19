@@ -1,0 +1,43 @@
+/* Mixins
+---------------------------------------------------------------------*/
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+@function pxToEm($pixelValue) {
+	@return $pixelValue / 16 + em;
+}
+
+@mixin respond-to($media) {
+	@if $media == small {
+		@media only screen and (max-width: $break-small) { @content; }
+	}
+	@else if $media == medium {
+		@media only screen and (min-width: $break-small) and (max-width: $break-large) { @content; }
+	}
+	@else if $media == wide {
+		@media only screen and (min-width: $break-large) { @content; }
+	}
+}
+
+@mixin responsive($type, $value, $valueMax: 0) { 
+	@if $type == min {
+		@media only screen and (min-width: $value) { @content; }
+	} 
+	@else if $type == max {
+		@media only screen and (max-width: $value) { @content; }
+	} 
+	@else if $type == minmax {
+		@media only screen and (min-width: $value) and (max-width: $valueMax) { @content; }
+	} 
+}
+
+@function calculateHeight($width, $originalWidth, $originalHeight) {
+	@return round(($width * $originalHeight) / $originalWidth);
+}
+
+@function calculateWidth($height, $originalWidth, $originalHeight) {
+	@return round((($height * $originalWidth) / $originalHeight));
+}
+/*-------------------------------------------------------------------*/

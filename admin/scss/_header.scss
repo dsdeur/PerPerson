@@ -1,0 +1,28 @@
+header {
+	padding:30px;
+	height:70px;
+	display:block;
+
+	#title, h1 {
+		float:left;
+	}
+
+	#title a {
+		float:left;
+		clear:both;
+	}
+
+
+
+	#profile {
+		display:inline-block;
+		float:right;
+		@include font-size(1.6);
+		@include openSans(regular);
+		text-transform:uppercase;
+
+		p {
+			float:left;
+		}
+	}
+}

@@ -1,0 +1,33 @@
+
+/* Colors ---------------------- */
+$red:#E74C3C;
+$darkRed:#C0392B;
+$blue:#34495E;
+$darkBlue:#2980B9;
+$lightGrey:#ECF0F1;
+$lightGrey:#d4d4d4;
+$textGrey:#525252;
+
+
+/* Fonts ----------------------- */
+$nexaLight: nexa_lightregular, Helvetica, Arial, sans-serif;
+
+
+/* Breaks ---------------------- */
+$break-small: 45em;
+$break-large: 61em;
+
+
+/* Includes -------------------- */
+@import 'reset';
+@import 'fonts';
+@import 'mixins';
+@import 'global';
+@import 'blocks';
+@import 'header';
+@import 'login';
+@import 'userconfig';
+@import 'admindash';
+
+
+//@import 'responsive';

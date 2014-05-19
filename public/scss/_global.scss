@@ -1,0 +1,82 @@
+/* Global styles
+---------------------------------------------------------------------*/
+html {
+}
+
+body {
+	@include openSans();
+	color:#fff;
+	background-color:#1f1f1f;
+	background: url(../images/worldbgquality.jpg) center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom:130px;
+}
+
+h1 {
+	font-family:$nexaLight;
+	@include font-size(2.7);
+	font-weight:bold;
+	/*text-shadow: 2px 2px 4px #333;*/
+}
+
+h2 {		
+	@include font-size(1.8);					
+	text-shadow: 2px 2px 4px #333;
+}
+
+h3 {
+	@include font-size(1.2);
+	font-weight:bold;
+}
+
+p {
+	@include font-size(1.4);
+	line-height:22px;
+	padding-bottom:20px;
+	text-align:justify;
+}
+
+small {
+	@include font-size(1.0);
+	text-transform:uppercase;
+}
+
+a {
+	color:#e74c3c;
+	@include font-size(1.4);
+	text-decoration:underline;
+	//@include font-size(1.6);
+}
+	a:hover {
+	}
+
+	a img {
+		border:none;
+	}
+
+div, span {
+	@include font-size(3.6);
+}
+.alignright {
+	float:right;
+}
+
+.alignleft {
+	float:left;
+}
+
+ul {
+	margin-left:20px;
+}
+
+.devider {
+	border:1px ;
+}
+
+.clear {
+	clear:both;
+}
+/*-------------------------------------------------------------------*/

@@ -1,0 +1,146 @@
+.icon {
+	$height: 40px;
+	position:relative;
+	float:left;
+	margin-right:5px;
+	margin-bottom:5px;
+
+	.iconBG, .iconPerc {
+		position:absolute;
+		top:0;
+	}
+
+	.iconBG {
+		background:#e1e1e1;
+	}
+
+	.iconPerc {
+		background:#21d4c4;
+		background:#3498DB;
+		background:#E74C3C;
+		width:0;
+	}
+
+	&.person {
+		$width: calculateWidth($height, 239, 618);
+
+		width: $width;
+		height: $height;
+
+		.iconBG {
+			width: $width;
+			height: $height;
+			-webkit-mask-image: url(../images/person.png);
+			-webkit-mask-size:$width $height;
+			-webkit-mask-repeat:no-repeat;
+		}
+
+		.iconPerc {
+			height: $height;
+			-webkit-mask-image: url(../images/person.png);
+			-webkit-mask-size:$width $height;
+			-webkit-mask-repeat:no-repeat;
+		}
+	}
+
+	&.lightbulb {
+		$width: calculateWidth($height, 319, 438);
+
+		width: $width;
+		height: $height;
+
+		.iconBG {
+			width: $width;
+			height: $height;
+			-webkit-mask-image: url(../images/lightbulb.png);
+			-webkit-mask-size:$width $height;
+			-webkit-mask-repeat:no-repeat;
+		}
+
+		.iconPerc {
+			height: $height;
+			-webkit-mask-image: url(../images/lightbulb.png);
+			-webkit-mask-size:$width $height;
+			-webkit-mask-repeat:no-repeat;
+		}
+	}
+
+	&.car {
+		$width: calculateWidth(90px, 854, 379);
+
+		width: $width;
+		height: 90px;
+
+		.iconBG {
+			width: $width;
+			height: 90px;
+			-webkit-mask-image: url(../images/car.png);
+			-webkit-mask-size:$width 90px;
+			-webkit-mask-repeat:no-repeat;
+		}
+
+		.iconPerc {
+			height: 90px;
+			-webkit-mask-image: url(../images/car.png);
+			-webkit-mask-size:$width 90px;
+			-webkit-mask-repeat:no-repeat;
+		}
+	}
+
+	&.water {
+		$width: calculateWidth($height, 419, 585);
+
+		width: $width;
+		height: $height;
+
+		.iconBG {
+			width: $width;
+			height: $height;
+			-webkit-mask-image: url(../images/glass.png);
+			-webkit-mask-size:$width $height;
+			-webkit-mask-repeat:no-repeat;
+		}
+
+		.iconPerc {
+			height: $height;
+			-webkit-mask-image: url(../images/glass.png);
+			-webkit-mask-size:$width $height;
+			-webkit-mask-repeat:no-repeat;
+		}
+	}
+
+	&.squareMeter {
+		$width: calculateWidth($height, 180, 180);
+		border-radius:5px;
+		width: $width;
+		height: $height;
+
+		.iconBG {
+			border-radius:5px;
+			width: $width;
+			height: $height;
+			-webkit-mask-image: url(../images/squaremeter.png);
+			-webkit-mask-size:$width $height;
+			-webkit-mask-repeat:no-repeat;
+		}
+
+		.iconPerc {
+			border-radius:5px;
+			height: $height;
+			-webkit-mask-image: url(../images/squaremeter.png);
+			-webkit-mask-size:$width $height;
+			-webkit-mask-repeat:no-repeat;
+		}
+	}
+}
+
+.iconPerson {
+	$height:47px;
+	$width: calculateWidth($height, 239, 618);
+	width: $width;
+	height: $height;
+	background:#2980B9;
+	-webkit-mask-image: url(../images/person.png);
+	-webkit-mask-size:$width $height;
+	-webkit-mask-repeat:no-repeat;
+}

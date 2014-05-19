@@ -1,0 +1,331 @@
+#backgrounds {
+	margin:20px 100px 50px 100px;
+	padding:0 0 0 116px;
+	position:absolute;
+	z-index:0000;
+
+	.itembackground {
+		background:rgba(17,17,17,0.5);
+		//margin:0 40px 20px 40px;
+		margin-right:40px;
+		width:556px;
+		height:800px;
+		float:left;
+		opacity:1.0;
+		border-radius:10px;
+		padding:40px;
+		border:2px solid rgba(0,0,0,0.1);
+	}
+}
+
+#main {
+	position:relative;
+	z-index:9999;
+	@include font-size(3.6);
+	//width:1241px;
+	margin:20px 100px 50px 100px;
+	margin-top:20px;
+}
+	.headers {
+		height:100px;
+		padding-left:116px;
+		border-bottom:1px solid #6f6f6f;
+		margin-bottom:20px;
+	}		
+	.headers header {
+		//background:#666;
+		//	border-bottom:5px solid #3f3f3f;
+		//padding:5px;
+		height:60px;
+		//margin-bottom:50px;	
+		width:600px;
+		float:left;
+		padding:20px 20px 20px 20px;
+		margin-right:40px;
+		//border-radius:10px 10px 0 0;
+
+		select {
+			padding:10px;
+			background:#ECF0F1;
+			border:none;
+			border-radius:5px;
+			//border:5px solid #2C3E50;
+			@include font-size(2.2);
+			width:100%;
+		}
+		
+		.countryTitle {
+			display:none;
+
+			h1 {
+				display:block;
+				text-transform:uppercase;
+				margin-bottom:5px;
+				@include openSans(light);
+				//background:#e12424;
+				img {
+					float:left;
+					padding-top:0px;
+					margin-right:5px;
+				}
+				float:left;
+			}
+		}
+			
+		.iconPerson {
+			float:right;
+			margin-right:10px;
+		}
+
+		.populationTotal {
+			float:right;
+		}
+	}
+
+	.digits {
+		clear:both;
+		min-width:23px;
+	}
+	.digits span {
+		@include openSans(light);
+		padding:6px 5px 1px 5px;
+		margin-right:2px;
+		text-align:center;
+		width:23px;
+		display:block;
+		float:left;
+		color:#2C3E50;
+		background:#ECF0F1;
+	}
+	.content .item {
+		margin:0 40px 20px 40px;
+		//background:#fff;
+		width:600px;
+		float:left;
+		min-height:100px;
+
+		.digits {
+			width:auto;
+			height:27px;
+			padding:5px 0 5px 0;
+			//background:rgba(255,255,255,0.1);
+			border-bottom:1px dotted rgba(255,255,255,0.2);
+			margin-bottom:10px;
+			
+			.text {
+				padding-left:10px;
+				float:right;
+
+				.texttext {
+					float:left;
+					position:relative;
+					top:4px;
+					left:-10px;
+					@include font-size(1.8);	
+					@include openSans(light);
+				}
+
+				.iconPerson {
+					float:left;
+					position:relative;
+					$height:27px;
+					$width: calculateWidth($height, 239, 618);
+					width: $width;
+					height: $height;
+					background:#2980B9;
+					-webkit-mask-image: url(../images/person.png);
+					-webkit-mask-size:$width $height;
+					-webkit-mask-repeat:no-repeat;
+				}	
+			}
+		}
+
+		.digits span {
+			@include font-size(2.0);
+			@include openSans(light);
+			padding:4px 3px 1px 3px;
+			width:17px;
+			margin-right:2px;
+			text-align:center;
+			display:block;
+			float:left;
+			color:#FFF;
+			background:#2C3E50;
+		}
+	}
+
+
+.data {
+	clear:both;
+	width:100%;
+	border-bottom:1px solid #6f6f6f;
+	margin-bottom:20px;
+
+	.content {
+		//width:480px;
+		padding-bottom:10px;
+	}
+
+	.iconContainer {
+		height:50px;
+		width:50px;
+		padding:20px;
+		float:left;
+		border-radius:50%;
+		border:3px solid #6f6f6f;
+		text-align:center;
+		margin-bottom:20px;
+		
+		.icon {
+			float:right !important;
+			margin:0 auto;
+
+			$height: 50px;
+			$width:50px;
+			position:relative;
+
+			.iconBG, .iconPerc {
+				position:absolute;
+				top:0;
+			}
+
+			.iconBG {
+				background:#6f6f6f;
+			}
+
+			.iconPerc {
+				background:#21d4c4;
+				width:0;
+			}
+
+			&.person {
+				$widthNew: calculateWidth($height, 239, 618);
+
+				width: $width;
+				height: $height;
+
+				.iconBG {
+					width: $widthNew;
+					height: $height;
+					-webkit-mask-image: url(../images/icons_person.svg);
+					-webkit-mask-size:$widthNew $height;
+					-webkit-mask-repeat:no-repeat;
+					-webkit-mask-position: center center;
+				}
+
+				.iconPerc {
+					height: $height;
+					-webkit-mask-image: url(../images/icons_person.svg);
+					-webkit-mask-size:$widthNew $height;
+					-webkit-mask-repeat:no-repeat;
+					-webkit-mask-position: center center;
+				}
+			}
+
+			&.lightbulb {
+				$widthNew: calculateWidth($height, 319, 438);
+
+				width: $width;
+				height: $height;
+
+				.iconBG {
+					width: $widthNew;
+					height: $height;
+					-webkit-mask-image: url(../images/icons_lightbulb.svg);
+					-webkit-mask-size:$widthNew $height;
+					-webkit-mask-repeat:no-repeat;
+					-webkit-mask-position: center center;
+				}
+
+				.iconPerc {
+					height: $height;
+					-webkit-mask-image: url(../images/icons_lightbulb.svg);
+					-webkit-mask-size:$widthNew $height;
+					-webkit-mask-repeat:no-repeat;
+					-webkit-mask-position: center center;
+				}
+			}
+
+			&.car {
+				$heightNew: calculateHeight($width, 854, 379);
+
+				width: $width;
+				height: $height;
+
+				.iconBG {
+					width: $width;
+					height: $heightNew;
+					-webkit-mask-image: url(../images/icons_car.svg);
+					-webkit-mask-size:$width $heightNew;
+					-webkit-mask-repeat:no-repeat;
+					-webkit-mask-position: center center;
+					mask: url(../images/icons_car.svg);
+					//mask-size:$width $heightNew;
+					//mask-repeat:no-repeat;
+				}
+
+				.iconPerc {
+					height: $heightNew;
+					-webkit-mask-image: url(../images/icons_car.svg);
+					-webkit-mask-size:$width $heightNew;
+					-webkit-mask-repeat:no-repeat;
+					-webkit-mask-position: center center;
+					mask: url(../images/icons_car.svg);
+					//mask-size:;
+					//mask-repeat:no-repeat;
+				}
+			}
+
+			&.water {
+				$widthNew: calculateWidth($height, 419, 585);
+
+				width: $width;
+				height: $height;
+
+				.iconBG {
+					width: $widthNew;
+					height: $height;
+					-webkit-mask-image: url(../images/icons_glass.svg);
+					-webkit-mask-size:$widthNew $height;
+					-webkit-mask-repeat:no-repeat;
+					-webkit-mask-position: center center;
+				}
+
+				.iconPerc {
+					height: $height;
+					-webkit-mask-image: url(../images/icons_glass.svg);
+					-webkit-mask-size:$widthNew $height;
+					-webkit-mask-repeat:no-repeat;
+					-webkit-mask-position: center center;
+				}
+			}
+
+			&.squareMeter {
+				//$width: calculateWidth($height, 180, 180);
+
+				width: $width;
+				height: $height;
+
+				.iconBG {
+					width: $width;
+					height: $height;
+					-webkit-mask-image: url(../images/icons_squaremeter.svg);
+					-webkit-mask-size:$width $height;
+					-webkit-mask-repeat:no-repeat;
+				}
+
+				.iconPerc {
+					height: $height;
+					-webkit-mask-image: url(../images/icons_squaremeter.svg);
+					-webkit-mask-size:$width $height;
+					-webkit-mask-repeat:no-repeat;
+				}
+			}
+
+			.iconBG {
+				height:50px !important;
+				width:50px !important;
+			}
+		}
+	}
+}

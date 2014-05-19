@@ -1,0 +1,33 @@
+
+/* Colors ---------------------- */
+$flatRed: #e74c3c;
+$brightGreen: #15cc97;
+$darkGrey: #3b3b3b;
+$otherGrey: #333333;
+$darkerGrey: #212121;
+$lightGrey: #d6d4d4;
+$lighterGrey: #eaeaea;
+$almostWhite: #f2f2f2;
+
+
+/* Fonts ----------------------- */
+$nexaLight: nexa_lightregular, Helvetica, Arial, sans-serif;
+
+
+/* Breaks ---------------------- */
+$break-small: 45em;
+$break-large: 61em;
+
+
+/* Includes -------------------- */
+@import 'reset';
+@import 'fonts';
+@import 'mixins';
+@import 'global';
+
+/* Block styling */
+@import 'header';
+@import 'icons';
+@import 'countries';
+
+//@import 'responsive';
